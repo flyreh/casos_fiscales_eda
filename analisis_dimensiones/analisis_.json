@@ -1,0 +1,1298 @@
+{
+  "timestamp": "2025-08-07T00:45:14.033303",
+  "archivos_analizados": [
+    "casos_fiscales_2019_2023_consolidado.csv"
+  ],
+  "total_registros": 6075,
+  "dimensiones": {
+    "ubicaciones": {
+      "total_ubicaciones": 34,
+      "departamentos_unicos": 25,
+      "provincias_unicas": 30,
+      "distritos_unicos": 34,
+      "departamentos_encontrados": [
+        "AMAZONAS",
+        "ANCASH",
+        "APURIMAC",
+        "AREQUIPA",
+        "AYACUCHO",
+        "CAJAMARCA",
+        "CALLAO",
+        "CUSCO",
+        "HUANCAVELICA",
+        "HUANUCO",
+        "ICA",
+        "JUNIN",
+        "LA LIBERTAD",
+        "LAMBAYEQUE",
+        "LIMA",
+        "LORETO",
+        "MADRE DE DIOS",
+        "MOQUEGUA",
+        "PASCO",
+        "PIURA",
+        "PUNO",
+        "SAN MARTIN",
+        "TACNA",
+        "TUMBES",
+        "UCAYALI"
+      ],
+      "regiones_inferidas": {
+        "CENTRO": 15,
+        "NORTE": 7,
+        "SUR": 7,
+        "SELVA": 5
+      },
+      "datos_sql": [
+        {
+          "ubigeo_pjfs": 10101,
+          "dpto_pjfs": "AMAZONAS",
+          "prov_pjfs": "CHACHAPOYAS",
+          "dist_pjfs": "CHACHAPOYAS",
+          "region_geografica": "NORTE"
+        },
+        {
+          "ubigeo_pjfs": 20101,
+          "dpto_pjfs": "ANCASH",
+          "prov_pjfs": "HUARAZ",
+          "dist_pjfs": "HUARAZ",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 30101,
+          "dpto_pjfs": "APURIMAC",
+          "prov_pjfs": "ABANCAY",
+          "dist_pjfs": "ABANCAY",
+          "region_geografica": "SUR"
+        },
+        {
+          "ubigeo_pjfs": 40101,
+          "dpto_pjfs": "AREQUIPA",
+          "prov_pjfs": "AREQUIPA",
+          "dist_pjfs": "AREQUIPA",
+          "region_geografica": "SUR"
+        },
+        {
+          "ubigeo_pjfs": 50110,
+          "dpto_pjfs": "AYACUCHO",
+          "prov_pjfs": "HUAMANGA",
+          "dist_pjfs": "SAN JUAN BAUTISTA",
+          "region_geografica": "SUR"
+        },
+        {
+          "ubigeo_pjfs": 60101,
+          "dpto_pjfs": "CAJAMARCA",
+          "prov_pjfs": "CAJAMARCA",
+          "dist_pjfs": "CAJAMARCA",
+          "region_geografica": "NORTE"
+        },
+        {
+          "ubigeo_pjfs": 70101,
+          "dpto_pjfs": "CALLAO",
+          "prov_pjfs": "CALLAO",
+          "dist_pjfs": "CALLAO",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 150501,
+          "dpto_pjfs": "LIMA",
+          "prov_pjfs": "CAÑETE",
+          "dist_pjfs": "SAN VICENTE DE CAÑETE",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 80108,
+          "dpto_pjfs": "CUSCO",
+          "prov_pjfs": "CUSCO",
+          "dist_pjfs": "WANCHAQ",
+          "region_geografica": "SUR"
+        },
+        {
+          "ubigeo_pjfs": 90101,
+          "dpto_pjfs": "HUANCAVELICA",
+          "prov_pjfs": "HUANCAVELICA",
+          "dist_pjfs": "HUANCAVELICA",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 100101,
+          "dpto_pjfs": "HUANUCO",
+          "prov_pjfs": "HUANUCO",
+          "dist_pjfs": "HUANUCO",
+          "region_geografica": "SELVA"
+        },
+        {
+          "ubigeo_pjfs": 150801,
+          "dpto_pjfs": "LIMA",
+          "prov_pjfs": "HUAURA",
+          "dist_pjfs": "HUACHO",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 110101,
+          "dpto_pjfs": "ICA",
+          "prov_pjfs": "ICA",
+          "dist_pjfs": "ICA",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 120114,
+          "dpto_pjfs": "JUNIN",
+          "prov_pjfs": "HUANCAYO",
+          "dist_pjfs": "EL TAMBO",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 130101,
+          "dpto_pjfs": "LA LIBERTAD",
+          "prov_pjfs": "TRUJILLO",
+          "dist_pjfs": "TRUJILLO",
+          "region_geografica": "NORTE"
+        },
+        {
+          "ubigeo_pjfs": 140101,
+          "dpto_pjfs": "LAMBAYEQUE",
+          "prov_pjfs": "CHICLAYO",
+          "dist_pjfs": "CHICLAYO",
+          "region_geografica": "NORTE"
+        },
+        {
+          "ubigeo_pjfs": 150101,
+          "dpto_pjfs": "LIMA",
+          "prov_pjfs": "LIMA",
+          "dist_pjfs": "LIMA",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 150137,
+          "dpto_pjfs": "LIMA",
+          "prov_pjfs": "LIMA",
+          "dist_pjfs": "SANTA ANITA",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 70106,
+          "dpto_pjfs": "CALLAO",
+          "prov_pjfs": "CALLAO",
+          "dist_pjfs": "VENTANILLA",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 150112,
+          "dpto_pjfs": "LIMA",
+          "prov_pjfs": "LIMA",
+          "dist_pjfs": "INDEPENDENCIA",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 150142,
+          "dpto_pjfs": "LIMA",
+          "prov_pjfs": "LIMA",
+          "dist_pjfs": "VILLA EL SALVADOR",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 160101,
+          "dpto_pjfs": "LORETO",
+          "prov_pjfs": "MAYNAS",
+          "dist_pjfs": "IQUITOS",
+          "region_geografica": "SELVA"
+        },
+        {
+          "ubigeo_pjfs": 170101,
+          "dpto_pjfs": "MADRE DE DIOS",
+          "prov_pjfs": "TAMBOPATA",
+          "dist_pjfs": "TAMBOPATA",
+          "region_geografica": "SELVA"
+        },
+        {
+          "ubigeo_pjfs": 180101,
+          "dpto_pjfs": "MOQUEGUA",
+          "prov_pjfs": "MARISCAL NIETO",
+          "dist_pjfs": "MOQUEGUA",
+          "region_geografica": "SUR"
+        },
+        {
+          "ubigeo_pjfs": 190113,
+          "dpto_pjfs": "PASCO",
+          "prov_pjfs": "PASCO",
+          "dist_pjfs": "YANACANCHA",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 200101,
+          "dpto_pjfs": "PIURA",
+          "prov_pjfs": "PIURA",
+          "dist_pjfs": "PIURA",
+          "region_geografica": "NORTE"
+        },
+        {
+          "ubigeo_pjfs": 210101,
+          "dpto_pjfs": "PUNO",
+          "prov_pjfs": "PUNO",
+          "dist_pjfs": "PUNO",
+          "region_geografica": "SUR"
+        },
+        {
+          "ubigeo_pjfs": 220101,
+          "dpto_pjfs": "SAN MARTIN",
+          "prov_pjfs": "MOYOBAMBA",
+          "dist_pjfs": "MOYOBAMBA",
+          "region_geografica": "SELVA"
+        },
+        {
+          "ubigeo_pjfs": 21801,
+          "dpto_pjfs": "ANCASH",
+          "prov_pjfs": "SANTA",
+          "dist_pjfs": "CHIMBOTE",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 120301,
+          "dpto_pjfs": "JUNIN",
+          "prov_pjfs": "CHANCHAMAYO",
+          "dist_pjfs": "CHANCHAMAYO",
+          "region_geografica": "CENTRO"
+        },
+        {
+          "ubigeo_pjfs": 200601,
+          "dpto_pjfs": "PIURA",
+          "prov_pjfs": "SULLANA",
+          "dist_pjfs": "SULLANA",
+          "region_geografica": "NORTE"
+        },
+        {
+          "ubigeo_pjfs": 230101,
+          "dpto_pjfs": "TACNA",
+          "prov_pjfs": "TACNA",
+          "dist_pjfs": "TACNA",
+          "region_geografica": "SUR"
+        },
+        {
+          "ubigeo_pjfs": 240101,
+          "dpto_pjfs": "TUMBES",
+          "prov_pjfs": "TUMBES",
+          "dist_pjfs": "TUMBES",
+          "region_geografica": "NORTE"
+        },
+        {
+          "ubigeo_pjfs": 250101,
+          "dpto_pjfs": "UCAYALI",
+          "prov_pjfs": "CORONEL PORTILLO",
+          "dist_pjfs": "CALLERIA",
+          "region_geografica": "SELVA"
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Inferencia geográfica desde departamentos reales",
+        "supuestos_aplicados": "NINGUNO sobre ubicaciones específicas"
+      }
+    },
+    "distritos_fiscales": {
+      "total_distritos": 34,
+      "distritos_encontrados": [
+        "AMAZONAS",
+        "ANCASH",
+        "APURIMAC",
+        "AREQUIPA",
+        "AYACUCHO",
+        "CAJAMARCA",
+        "CALLAO",
+        "CAÑETE",
+        "CUSCO",
+        "HUANCAVELICA",
+        "HUANUCO",
+        "HUAURA",
+        "ICA",
+        "JUNIN",
+        "LA LIBERTAD",
+        "LAMBAYEQUE",
+        "LIMA CENTRO",
+        "LIMA ESTE",
+        "LIMA NOROESTE",
+        "LIMA NORTE",
+        "LIMA SUR",
+        "LORETO",
+        "MADRE DE DIOS",
+        "MOQUEGUA",
+        "PASCO",
+        "PIURA",
+        "PUNO",
+        "SAN MARTIN",
+        "SANTA",
+        "SELVA CENTRAL",
+        "SULLANA",
+        "TACNA",
+        "TUMBES",
+        "UCAYALI"
+      ],
+      "distritos_por_departamento": {
+        "AMAZONAS": 1,
+        "ANCASH": 2,
+        "APURIMAC": 1,
+        "AREQUIPA": 1,
+        "AYACUCHO": 1,
+        "CAJAMARCA": 1,
+        "CALLAO": 2,
+        "CUSCO": 1,
+        "HUANCAVELICA": 1,
+        "HUANUCO": 1,
+        "ICA": 1,
+        "JUNIN": 2,
+        "LA LIBERTAD": 1,
+        "LAMBAYEQUE": 1,
+        "LIMA": 6,
+        "LORETO": 1,
+        "MADRE DE DIOS": 1,
+        "MOQUEGUA": 1,
+        "PASCO": 1,
+        "PIURA": 2,
+        "PUNO": 1,
+        "SAN MARTIN": 1,
+        "TACNA": 1,
+        "TUMBES": 1,
+        "UCAYALI": 1
+      },
+      "datos_sql": [
+        {
+          "distrito_fiscal": "AMAZONAS",
+          "ubigeo_pjfs": 10101,
+          "dpto_pjfs": "AMAZONAS"
+        },
+        {
+          "distrito_fiscal": "ANCASH",
+          "ubigeo_pjfs": 20101,
+          "dpto_pjfs": "ANCASH"
+        },
+        {
+          "distrito_fiscal": "APURIMAC",
+          "ubigeo_pjfs": 30101,
+          "dpto_pjfs": "APURIMAC"
+        },
+        {
+          "distrito_fiscal": "AREQUIPA",
+          "ubigeo_pjfs": 40101,
+          "dpto_pjfs": "AREQUIPA"
+        },
+        {
+          "distrito_fiscal": "AYACUCHO",
+          "ubigeo_pjfs": 50110,
+          "dpto_pjfs": "AYACUCHO"
+        },
+        {
+          "distrito_fiscal": "CAJAMARCA",
+          "ubigeo_pjfs": 60101,
+          "dpto_pjfs": "CAJAMARCA"
+        },
+        {
+          "distrito_fiscal": "CALLAO",
+          "ubigeo_pjfs": 70101,
+          "dpto_pjfs": "CALLAO"
+        },
+        {
+          "distrito_fiscal": "CAÑETE",
+          "ubigeo_pjfs": 150501,
+          "dpto_pjfs": "LIMA"
+        },
+        {
+          "distrito_fiscal": "CUSCO",
+          "ubigeo_pjfs": 80108,
+          "dpto_pjfs": "CUSCO"
+        },
+        {
+          "distrito_fiscal": "HUANCAVELICA",
+          "ubigeo_pjfs": 90101,
+          "dpto_pjfs": "HUANCAVELICA"
+        },
+        {
+          "distrito_fiscal": "HUANUCO",
+          "ubigeo_pjfs": 100101,
+          "dpto_pjfs": "HUANUCO"
+        },
+        {
+          "distrito_fiscal": "HUAURA",
+          "ubigeo_pjfs": 150801,
+          "dpto_pjfs": "LIMA"
+        },
+        {
+          "distrito_fiscal": "ICA",
+          "ubigeo_pjfs": 110101,
+          "dpto_pjfs": "ICA"
+        },
+        {
+          "distrito_fiscal": "JUNIN",
+          "ubigeo_pjfs": 120114,
+          "dpto_pjfs": "JUNIN"
+        },
+        {
+          "distrito_fiscal": "LA LIBERTAD",
+          "ubigeo_pjfs": 130101,
+          "dpto_pjfs": "LA LIBERTAD"
+        },
+        {
+          "distrito_fiscal": "LAMBAYEQUE",
+          "ubigeo_pjfs": 140101,
+          "dpto_pjfs": "LAMBAYEQUE"
+        },
+        {
+          "distrito_fiscal": "LIMA CENTRO",
+          "ubigeo_pjfs": 150101,
+          "dpto_pjfs": "LIMA"
+        },
+        {
+          "distrito_fiscal": "LIMA ESTE",
+          "ubigeo_pjfs": 150137,
+          "dpto_pjfs": "LIMA"
+        },
+        {
+          "distrito_fiscal": "LIMA NOROESTE",
+          "ubigeo_pjfs": 70106,
+          "dpto_pjfs": "CALLAO"
+        },
+        {
+          "distrito_fiscal": "LIMA NORTE",
+          "ubigeo_pjfs": 150112,
+          "dpto_pjfs": "LIMA"
+        },
+        {
+          "distrito_fiscal": "LIMA SUR",
+          "ubigeo_pjfs": 150142,
+          "dpto_pjfs": "LIMA"
+        },
+        {
+          "distrito_fiscal": "LORETO",
+          "ubigeo_pjfs": 160101,
+          "dpto_pjfs": "LORETO"
+        },
+        {
+          "distrito_fiscal": "MADRE DE DIOS",
+          "ubigeo_pjfs": 170101,
+          "dpto_pjfs": "MADRE DE DIOS"
+        },
+        {
+          "distrito_fiscal": "MOQUEGUA",
+          "ubigeo_pjfs": 180101,
+          "dpto_pjfs": "MOQUEGUA"
+        },
+        {
+          "distrito_fiscal": "PASCO",
+          "ubigeo_pjfs": 190113,
+          "dpto_pjfs": "PASCO"
+        },
+        {
+          "distrito_fiscal": "PIURA",
+          "ubigeo_pjfs": 200101,
+          "dpto_pjfs": "PIURA"
+        },
+        {
+          "distrito_fiscal": "PUNO",
+          "ubigeo_pjfs": 210101,
+          "dpto_pjfs": "PUNO"
+        },
+        {
+          "distrito_fiscal": "SAN MARTIN",
+          "ubigeo_pjfs": 220101,
+          "dpto_pjfs": "SAN MARTIN"
+        },
+        {
+          "distrito_fiscal": "SANTA",
+          "ubigeo_pjfs": 21801,
+          "dpto_pjfs": "ANCASH"
+        },
+        {
+          "distrito_fiscal": "SELVA CENTRAL",
+          "ubigeo_pjfs": 120301,
+          "dpto_pjfs": "JUNIN"
+        },
+        {
+          "distrito_fiscal": "SULLANA",
+          "ubigeo_pjfs": 200601,
+          "dpto_pjfs": "PIURA"
+        },
+        {
+          "distrito_fiscal": "TACNA",
+          "ubigeo_pjfs": 230101,
+          "dpto_pjfs": "TACNA"
+        },
+        {
+          "distrito_fiscal": "TUMBES",
+          "ubigeo_pjfs": 240101,
+          "dpto_pjfs": "TUMBES"
+        },
+        {
+          "distrito_fiscal": "UCAYALI",
+          "ubigeo_pjfs": 250101,
+          "dpto_pjfs": "UCAYALI"
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Solo extracción de datos reales",
+        "supuestos_aplicados": "NINGUNO"
+      }
+    },
+    "tipos_fiscalia": {
+      "total_tipos": 3,
+      "tipos_encontrados": [
+        "PROVINCIAL",
+        "SUPERIOR",
+        "SUPREMA"
+      ],
+      "distribucion": [
+        {
+          "tipo_fiscalia": "PROVINCIAL",
+          "nivel_jerarquico": 3,
+          "frecuencia": 3184,
+          "porcentaje": 52.41152263374486
+        },
+        {
+          "tipo_fiscalia": "SUPERIOR",
+          "nivel_jerarquico": 2,
+          "frecuencia": 2869,
+          "porcentaje": 47.22633744855967
+        },
+        {
+          "tipo_fiscalia": "SUPREMA",
+          "nivel_jerarquico": 1,
+          "frecuencia": 22,
+          "porcentaje": 0.36213991769547327
+        }
+      ],
+      "datos_sql": [
+        {
+          "tipo_fiscalia": "PROVINCIAL",
+          "nivel_jerarquico": 3,
+          "frecuencia": 3184,
+          "porcentaje": 52.41152263374486
+        },
+        {
+          "tipo_fiscalia": "SUPERIOR",
+          "nivel_jerarquico": 2,
+          "frecuencia": 2869,
+          "porcentaje": 47.22633744855967
+        },
+        {
+          "tipo_fiscalia": "SUPREMA",
+          "nivel_jerarquico": 1,
+          "frecuencia": 22,
+          "porcentaje": 0.36213991769547327
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Inferencia jerárquica desde nombres (conocimiento judicial básico)",
+        "supuestos_aplicados": "Solo jerarquía del sistema judicial peruano"
+      }
+    },
+    "materias": {
+      "total_materias": 5,
+      "materias_encontradas": [
+        "CIVIL",
+        "CONTENCIOSO ADMINISTRATIVO",
+        "CONTROL INTERNO",
+        "FAMILIA",
+        "PENAL"
+      ],
+      "materias_principales": [
+        {
+          "materia": "CIVIL",
+          "frecuencia": 306,
+          "porcentaje": 5.037037037037037,
+          "es_principal": true
+        },
+        {
+          "materia": "FAMILIA",
+          "frecuencia": 2269,
+          "porcentaje": 37.349794238683124,
+          "es_principal": true
+        },
+        {
+          "materia": "PENAL",
+          "frecuencia": 3493,
+          "porcentaje": 57.497942386831284,
+          "es_principal": true
+        }
+      ],
+      "materias_secundarias": [
+        {
+          "materia": "CONTENCIOSO ADMINISTRATIVO",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272,
+          "es_principal": false
+        },
+        {
+          "materia": "CONTROL INTERNO",
+          "frecuencia": 4,
+          "porcentaje": 0.06584362139917696,
+          "es_principal": false
+        }
+      ],
+      "distribucion": [
+        {
+          "materia": "PENAL",
+          "frecuencia": 3493,
+          "porcentaje": 57.497942386831284,
+          "es_principal": true
+        },
+        {
+          "materia": "FAMILIA",
+          "frecuencia": 2269,
+          "porcentaje": 37.349794238683124,
+          "es_principal": true
+        },
+        {
+          "materia": "CIVIL",
+          "frecuencia": 306,
+          "porcentaje": 5.037037037037037,
+          "es_principal": true
+        },
+        {
+          "materia": "CONTROL INTERNO",
+          "frecuencia": 4,
+          "porcentaje": 0.06584362139917696,
+          "es_principal": false
+        },
+        {
+          "materia": "CONTENCIOSO ADMINISTRATIVO",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272,
+          "es_principal": false
+        }
+      ],
+      "datos_sql": [
+        {
+          "materia": "CIVIL",
+          "frecuencia": 306,
+          "porcentaje": 5.037037037037037,
+          "es_principal": true
+        },
+        {
+          "materia": "CONTENCIOSO ADMINISTRATIVO",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272,
+          "es_principal": false
+        },
+        {
+          "materia": "CONTROL INTERNO",
+          "frecuencia": 4,
+          "porcentaje": 0.06584362139917696,
+          "es_principal": false
+        },
+        {
+          "materia": "FAMILIA",
+          "frecuencia": 2269,
+          "porcentaje": 37.349794238683124,
+          "es_principal": true
+        },
+        {
+          "materia": "PENAL",
+          "frecuencia": 3493,
+          "porcentaje": 57.497942386831284,
+          "es_principal": true
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Solo frecuencia de aparición",
+        "supuestos_aplicados": "NINGUNO",
+        "prioridades_predefinidas": "NO se asignaron prioridades arbitrarias"
+      }
+    },
+    "especialidades": {
+      "total_especialidades": 10,
+      "especialidades_encontradas": [
+        "CIVIL",
+        "ACTOS CONTRA LA LIBERTAD SEXUAL",
+        "FAMILIA CIVIL",
+        "FAMILIA PENAL",
+        "FAMILIA TUTELAR",
+        "VIOLENCIA FAMILIAR",
+        "PENAL",
+        "CONTENCIOSO ADMINISTRATIVO",
+        "CONTROL INTERNO",
+        "FAMILIA"
+      ],
+      "por_materia": {
+        "CIVIL": 1,
+        "FAMILIA": 6,
+        "PENAL": 1,
+        "CONTENCIOSO ADMINISTRATIVO": 1,
+        "CONTROL INTERNO": 1
+      },
+      "mas_frecuentes": [
+        {
+          "especialidad": "PENAL",
+          "materia_asociada": "PENAL",
+          "frecuencia": 3493,
+          "porcentaje": 57.497942386831284
+        },
+        {
+          "especialidad": "FAMILIA PENAL",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 594,
+          "porcentaje": 9.777777777777779
+        },
+        {
+          "especialidad": "VIOLENCIA FAMILIAR",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 589,
+          "porcentaje": 9.695473251028806
+        },
+        {
+          "especialidad": "FAMILIA TUTELAR",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 493,
+          "porcentaje": 8.11522633744856
+        },
+        {
+          "especialidad": "FAMILIA CIVIL",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 438,
+          "porcentaje": 7.209876543209877
+        },
+        {
+          "especialidad": "CIVIL",
+          "materia_asociada": "CIVIL",
+          "frecuencia": 306,
+          "porcentaje": 5.037037037037037
+        },
+        {
+          "especialidad": "ACTOS CONTRA LA LIBERTAD SEXUAL",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 152,
+          "porcentaje": 2.5020576131687244
+        },
+        {
+          "especialidad": "CONTROL INTERNO",
+          "materia_asociada": "CONTROL INTERNO",
+          "frecuencia": 4,
+          "porcentaje": 0.06584362139917696
+        },
+        {
+          "especialidad": "CONTENCIOSO ADMINISTRATIVO",
+          "materia_asociada": "CONTENCIOSO ADMINISTRATIVO",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272
+        },
+        {
+          "especialidad": "FAMILIA",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272
+        }
+      ],
+      "datos_sql": [
+        {
+          "especialidad": "CIVIL",
+          "materia_asociada": "CIVIL",
+          "frecuencia": 306,
+          "porcentaje": 5.037037037037037
+        },
+        {
+          "especialidad": "ACTOS CONTRA LA LIBERTAD SEXUAL",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 152,
+          "porcentaje": 2.5020576131687244
+        },
+        {
+          "especialidad": "FAMILIA CIVIL",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 438,
+          "porcentaje": 7.209876543209877
+        },
+        {
+          "especialidad": "FAMILIA PENAL",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 594,
+          "porcentaje": 9.777777777777779
+        },
+        {
+          "especialidad": "FAMILIA TUTELAR",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 493,
+          "porcentaje": 8.11522633744856
+        },
+        {
+          "especialidad": "VIOLENCIA FAMILIAR",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 589,
+          "porcentaje": 9.695473251028806
+        },
+        {
+          "especialidad": "PENAL",
+          "materia_asociada": "PENAL",
+          "frecuencia": 3493,
+          "porcentaje": 57.497942386831284
+        },
+        {
+          "especialidad": "CONTENCIOSO ADMINISTRATIVO",
+          "materia_asociada": "CONTENCIOSO ADMINISTRATIVO",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272
+        },
+        {
+          "especialidad": "CONTROL INTERNO",
+          "materia_asociada": "CONTROL INTERNO",
+          "frecuencia": 4,
+          "porcentaje": 0.06584362139917696
+        },
+        {
+          "especialidad": "FAMILIA",
+          "materia_asociada": "FAMILIA",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Solo asociación real especialidad-materia",
+        "supuestos_aplicados": "NINGUNO",
+        "gravedad_predefinida": "NO se asignó gravedad arbitraria",
+        "especializacion_predefinida": "NO se clasificó como especializada/general"
+      }
+    },
+    "tipos_caso": {
+      "total_tipos": 15,
+      "tipos_encontrados": [
+        "APELACION DENUNCIA",
+        "APELACION EXPEDIENTE",
+        "CONSULTAS",
+        "CONTIENDA",
+        "DENUNCIA",
+        "EXCLUSION FISCAL",
+        "EXPEDIENTE",
+        "INCIDENTE",
+        "INCIDENTE-EXPEDIENTE",
+        "INVESTIGACION PREVENTIVA",
+        "PROCESO CIVIL",
+        "PROCESO CONTENCIOSO",
+        "PROCESO FAMILIA",
+        "PROCESO PENAL",
+        "QUEJAS"
+      ],
+      "por_categoria": {
+        "INGRESO": 2,
+        "RECURSO": 2,
+        "PROCESO_GENERAL": 7,
+        "PROCESO_FORMAL": 4
+      },
+      "mas_frecuentes": [
+        {
+          "tipo_caso": "EXPEDIENTE",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 2076,
+          "porcentaje": 34.17283950617284
+        },
+        {
+          "tipo_caso": "DENUNCIA",
+          "categoria": "INGRESO",
+          "frecuencia": 1876,
+          "porcentaje": 30.88065843621399
+        },
+        {
+          "tipo_caso": "INVESTIGACION PREVENTIVA",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 401,
+          "porcentaje": 6.600823045267489
+        },
+        {
+          "tipo_caso": "INCIDENTE",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 325,
+          "porcentaje": 5.349794238683128
+        },
+        {
+          "tipo_caso": "QUEJAS",
+          "categoria": "RECURSO",
+          "frecuencia": 301,
+          "porcentaje": 4.954732510288066
+        },
+        {
+          "tipo_caso": "APELACION DENUNCIA",
+          "categoria": "INGRESO",
+          "frecuencia": 260,
+          "porcentaje": 4.279835390946502
+        },
+        {
+          "tipo_caso": "CONSULTAS",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 259,
+          "porcentaje": 4.2633744855967075
+        },
+        {
+          "tipo_caso": "EXCLUSION FISCAL",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 225,
+          "porcentaje": 3.7037037037037033
+        },
+        {
+          "tipo_caso": "APELACION EXPEDIENTE",
+          "categoria": "RECURSO",
+          "frecuencia": 164,
+          "porcentaje": 2.6995884773662553
+        },
+        {
+          "tipo_caso": "INCIDENTE-EXPEDIENTE",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 156,
+          "porcentaje": 2.567901234567901
+        }
+      ],
+      "datos_sql": [
+        {
+          "tipo_caso": "APELACION DENUNCIA",
+          "categoria": "INGRESO",
+          "frecuencia": 260,
+          "porcentaje": 4.279835390946502
+        },
+        {
+          "tipo_caso": "APELACION EXPEDIENTE",
+          "categoria": "RECURSO",
+          "frecuencia": 164,
+          "porcentaje": 2.6995884773662553
+        },
+        {
+          "tipo_caso": "CONSULTAS",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 259,
+          "porcentaje": 4.2633744855967075
+        },
+        {
+          "tipo_caso": "CONTIENDA",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 14,
+          "porcentaje": 0.23045267489711935
+        },
+        {
+          "tipo_caso": "DENUNCIA",
+          "categoria": "INGRESO",
+          "frecuencia": 1876,
+          "porcentaje": 30.88065843621399
+        },
+        {
+          "tipo_caso": "EXCLUSION FISCAL",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 225,
+          "porcentaje": 3.7037037037037033
+        },
+        {
+          "tipo_caso": "EXPEDIENTE",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 2076,
+          "porcentaje": 34.17283950617284
+        },
+        {
+          "tipo_caso": "INCIDENTE",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 325,
+          "porcentaje": 5.349794238683128
+        },
+        {
+          "tipo_caso": "INCIDENTE-EXPEDIENTE",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 156,
+          "porcentaje": 2.567901234567901
+        },
+        {
+          "tipo_caso": "INVESTIGACION PREVENTIVA",
+          "categoria": "PROCESO_GENERAL",
+          "frecuencia": 401,
+          "porcentaje": 6.600823045267489
+        },
+        {
+          "tipo_caso": "PROCESO CIVIL",
+          "categoria": "PROCESO_FORMAL",
+          "frecuencia": 2,
+          "porcentaje": 0.03292181069958848
+        },
+        {
+          "tipo_caso": "PROCESO CONTENCIOSO",
+          "categoria": "PROCESO_FORMAL",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272
+        },
+        {
+          "tipo_caso": "PROCESO FAMILIA",
+          "categoria": "PROCESO_FORMAL",
+          "frecuencia": 3,
+          "porcentaje": 0.04938271604938272
+        },
+        {
+          "tipo_caso": "PROCESO PENAL",
+          "categoria": "PROCESO_FORMAL",
+          "frecuencia": 10,
+          "porcentaje": 0.1646090534979424
+        },
+        {
+          "tipo_caso": "QUEJAS",
+          "categoria": "RECURSO",
+          "frecuencia": 301,
+          "porcentaje": 4.954732510288066
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Inferencia automática desde nombres reales",
+        "supuestos_aplicados": "ninguno",
+        "valores_externos": "no se usaron valores precargados"
+      }
+    },
+    "fiscalias_especializadas": {
+      "total_fiscalias_especializadas": 14,
+      "especializadas_encontradas": [
+        "CONTRA LA CRIMINALIDAD ORGANIZADA",
+        "CRIMINALIDAD ORGANIZADA",
+        "DELITOS ADUANEROS Y CONTRA LA PROPIEDAD INTELECTUAL",
+        "DELITOS DE CIBERDELINCUENCIA",
+        "DELITOS DE CORRUPCION DE FUNCIONARIOS",
+        "DELITOS DE TRAFICO ILICITO DE DROGAS",
+        "DELITOS DE TRATA DE PERSONAS",
+        "DELITOS TRIBUTARIOS",
+        "LAVADO DE ACTIVOS Y PERDIDA DE DOMINIO",
+        "MATERIA AMBIENTAL",
+        "NO_TIPO_ESPECIALIZADA",
+        "TRANSITO Y SEGURIDAD VIAL",
+        "TURISMO",
+        "VIOLENCIA CONTRA LA MUJER Y LOS INTEGRANTES DEL GRUPO FAMILIAR"
+      ],
+      "por_area_inferida": {
+        "Crimen Organizado": 2,
+        "Propiedad Intelectual": 1,
+        "General": 2,
+        "Anticorrupción": 1,
+        "Trafico ilicito de drogas": 1,
+        "Trata de Personas": 1,
+        "Tributario": 1,
+        "Lavado de Activos": 1,
+        "Medio Ambiente": 1,
+        "Tránsito y Seguridad Vial": 1,
+        "Turismo": 1,
+        "Violencia de Género": 1
+      },
+      "casos_especializados": 6075,
+      "casos_generales": 0,
+      "porcentaje_especializacion": 100.0,
+      "mas_frecuentes": [
+        {
+          "especializada": "NO_TIPO_ESPECIALIZADA",
+          "area_especializacion": "General",
+          "frecuencia": 4458,
+          "porcentaje": 73.38271604938271
+        },
+        {
+          "especializada": "DELITOS DE CORRUPCION DE FUNCIONARIOS",
+          "area_especializacion": "Anticorrupción",
+          "frecuencia": 568,
+          "porcentaje": 9.349794238683128
+        },
+        {
+          "especializada": "MATERIA AMBIENTAL",
+          "area_especializacion": "Medio Ambiente",
+          "frecuencia": 302,
+          "porcentaje": 4.9711934156378605
+        },
+        {
+          "especializada": "VIOLENCIA CONTRA LA MUJER Y LOS INTEGRANTES DEL GRUPO FAMILIAR",
+          "area_especializacion": "Violencia de Género",
+          "frecuencia": 190,
+          "porcentaje": 3.1275720164609053
+        },
+        {
+          "especializada": "DELITOS DE TRAFICO ILICITO DE DROGAS",
+          "area_especializacion": "Trafico ilicito de drogas",
+          "frecuencia": 132,
+          "porcentaje": 2.1728395061728394
+        },
+        {
+          "especializada": "CRIMINALIDAD ORGANIZADA",
+          "area_especializacion": "Crimen Organizado",
+          "frecuencia": 85,
+          "porcentaje": 1.3991769547325104
+        },
+        {
+          "especializada": "LAVADO DE ACTIVOS Y PERDIDA DE DOMINIO",
+          "area_especializacion": "Lavado de Activos",
+          "frecuencia": 85,
+          "porcentaje": 1.3991769547325104
+        },
+        {
+          "especializada": "DELITOS DE TRATA DE PERSONAS",
+          "area_especializacion": "Trata de Personas",
+          "frecuencia": 78,
+          "porcentaje": 1.2839506172839505
+        },
+        {
+          "especializada": "CONTRA LA CRIMINALIDAD ORGANIZADA",
+          "area_especializacion": "Crimen Organizado",
+          "frecuencia": 60,
+          "porcentaje": 0.9876543209876543
+        },
+        {
+          "especializada": "DELITOS ADUANEROS Y CONTRA LA PROPIEDAD INTELECTUAL",
+          "area_especializacion": "Propiedad Intelectual",
+          "frecuencia": 59,
+          "porcentaje": 0.9711934156378601
+        },
+        {
+          "especializada": "TRANSITO Y SEGURIDAD VIAL",
+          "area_especializacion": "Tránsito y Seguridad Vial",
+          "frecuencia": 29,
+          "porcentaje": 0.47736625514403286
+        },
+        {
+          "especializada": "DELITOS DE CIBERDELINCUENCIA",
+          "area_especializacion": "General",
+          "frecuencia": 15,
+          "porcentaje": 0.24691358024691357
+        },
+        {
+          "especializada": "DELITOS TRIBUTARIOS",
+          "area_especializacion": "Tributario",
+          "frecuencia": 9,
+          "porcentaje": 0.14814814814814814
+        },
+        {
+          "especializada": "TURISMO",
+          "area_especializacion": "Turismo",
+          "frecuencia": 5,
+          "porcentaje": 0.0823045267489712
+        }
+      ],
+      "datos_sql": [
+        {
+          "especializada": "CONTRA LA CRIMINALIDAD ORGANIZADA",
+          "area_especializacion": "Crimen Organizado",
+          "frecuencia": 60,
+          "porcentaje": 0.9876543209876543
+        },
+        {
+          "especializada": "CRIMINALIDAD ORGANIZADA",
+          "area_especializacion": "Crimen Organizado",
+          "frecuencia": 85,
+          "porcentaje": 1.3991769547325104
+        },
+        {
+          "especializada": "DELITOS ADUANEROS Y CONTRA LA PROPIEDAD INTELECTUAL",
+          "area_especializacion": "Propiedad Intelectual",
+          "frecuencia": 59,
+          "porcentaje": 0.9711934156378601
+        },
+        {
+          "especializada": "DELITOS DE CIBERDELINCUENCIA",
+          "area_especializacion": "General",
+          "frecuencia": 15,
+          "porcentaje": 0.24691358024691357
+        },
+        {
+          "especializada": "DELITOS DE CORRUPCION DE FUNCIONARIOS",
+          "area_especializacion": "Anticorrupción",
+          "frecuencia": 568,
+          "porcentaje": 9.349794238683128
+        },
+        {
+          "especializada": "DELITOS DE TRAFICO ILICITO DE DROGAS",
+          "area_especializacion": "Trafico ilicito de drogas",
+          "frecuencia": 132,
+          "porcentaje": 2.1728395061728394
+        },
+        {
+          "especializada": "DELITOS DE TRATA DE PERSONAS",
+          "area_especializacion": "Trata de Personas",
+          "frecuencia": 78,
+          "porcentaje": 1.2839506172839505
+        },
+        {
+          "especializada": "DELITOS TRIBUTARIOS",
+          "area_especializacion": "Tributario",
+          "frecuencia": 9,
+          "porcentaje": 0.14814814814814814
+        },
+        {
+          "especializada": "LAVADO DE ACTIVOS Y PERDIDA DE DOMINIO",
+          "area_especializacion": "Lavado de Activos",
+          "frecuencia": 85,
+          "porcentaje": 1.3991769547325104
+        },
+        {
+          "especializada": "MATERIA AMBIENTAL",
+          "area_especializacion": "Medio Ambiente",
+          "frecuencia": 302,
+          "porcentaje": 4.9711934156378605
+        },
+        {
+          "especializada": "NO_TIPO_ESPECIALIZADA",
+          "area_especializacion": "General",
+          "frecuencia": 4458,
+          "porcentaje": 73.38271604938271
+        },
+        {
+          "especializada": "TRANSITO Y SEGURIDAD VIAL",
+          "area_especializacion": "Tránsito y Seguridad Vial",
+          "frecuencia": 29,
+          "porcentaje": 0.47736625514403286
+        },
+        {
+          "especializada": "TURISMO",
+          "area_especializacion": "Turismo",
+          "frecuencia": 5,
+          "porcentaje": 0.0823045267489712
+        },
+        {
+          "especializada": "VIOLENCIA CONTRA LA MUJER Y LOS INTEGRANTES DEL GRUPO FAMILIAR",
+          "area_especializacion": "Violencia de Género",
+          "frecuencia": 190,
+          "porcentaje": 3.1275720164609053
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Inferencia automática desde nombres reales",
+        "supuestos_aplicados": "NINGUNO",
+        "areas_predefinidas": "NO se usaron áreas precargadas"
+      }
+    },
+    "tiempo": {
+      "años_encontrados": [
+        "2019",
+        "2020",
+        "2021",
+        "2022",
+        "2023"
+      ],
+      "periodos_encontrados": [
+        "ENERO - DICIEMBRE"
+      ],
+      "rango_años": "2019-2023",
+      "total_años": 5,
+      "datos_sql": [
+        {
+          "anio": 2019,
+          "periodo": "ENERO - DICIEMBRE",
+          "total_dias": 365
+        },
+        {
+          "anio": 2020,
+          "periodo": "ENERO - DICIEMBRE",
+          "total_dias": 366
+        },
+        {
+          "anio": 2021,
+          "periodo": "ENERO - DICIEMBRE",
+          "total_dias": 365
+        },
+        {
+          "anio": 2022,
+          "periodo": "ENERO - DICIEMBRE",
+          "total_dias": 365
+        },
+        {
+          "anio": 2023,
+          "periodo": "ENERO - DICIEMBRE",
+          "total_dias": 365
+        }
+      ],
+      "metadatos": {
+        "clasificacion_metodo": "Solo extracción de años y períodos reales",
+        "supuestos_aplicados": "NINGUNO sobre estructura temporal"
+      }
+    }
+  },
+  "metadatos": {
+    "enfoque": "100% Data-Driven Sin Supuestos",
+    "principio": "Solo extraer lo que existe, no asumir nada"
+  }
+}

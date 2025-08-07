@@ -1,0 +1,689 @@
+{
+  "estadisticas_descriptivas": {
+    "resumen_general": {
+      "total_registros": 6075,
+      "periodo_inicio": 2019,
+      "periodo_fin": 2023,
+      "total_distritos": 34,
+      "total_departamentos": 25,
+      "memoria_mb": 5.695028305053711,
+      "casos_totales_ingresados": 6471258,
+      "casos_totales_atendidos": 5700159,
+      "tasa_atencion_global": 0.880842488431152,
+      "completitud_datos": 100.0
+    },
+    "variables_numericas": {
+      "anio": {
+        "count": 6075,
+        "mean": 2021.027160493827,
+        "median": 2021.0,
+        "mode": 2022.0,
+        "std": 1.4084110733322053,
+        "min": 2019.0,
+        "max": 2023.0,
+        "q25": 2020.0,
+        "q75": 2022.0,
+        "range": 4.0,
+        "iqr": 2.0,
+        "coefficient_variation": 0.0006968788450067478,
+        "skewness": -0.04177618343951473,
+        "kurtosis": -1.2843540732763032,
+        "zeros_count": 0,
+        "zeros_percentage": 0.0,
+        "negative_count": 0,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "normalidad_shapiro_p": 5.630029673651452e-51,
+        "es_normal": false
+      },
+      "ingresado": {
+        "count": 6075,
+        "mean": 1065.2276543209878,
+        "median": 65.0,
+        "mode": 1.0,
+        "std": 5110.472618227395,
+        "min": 1.0,
+        "max": 77627.0,
+        "q25": 13.0,
+        "q75": 290.0,
+        "range": 77626.0,
+        "iqr": 277.0,
+        "coefficient_variation": 4.797540316848969,
+        "skewness": 8.03716161275247,
+        "kurtosis": 77.08257406695772,
+        "zeros_count": 0,
+        "zeros_percentage": 0.0,
+        "negative_count": 0,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "normalidad_shapiro_p": 7.599939808179018e-91,
+        "es_normal": false,
+        "casos_extremos_altos": 304,
+        "casos_extremos_bajos": 0,
+        "concentracion_top10": 10.248996408426306
+      },
+      "atendido": {
+        "count": 6075,
+        "mean": 938.2977777777778,
+        "median": 61.0,
+        "mode": 1.0,
+        "std": 4424.716916254545,
+        "min": 0.0,
+        "max": 71356.0,
+        "q25": 12.0,
+        "q75": 269.0,
+        "range": 71356.0,
+        "iqr": 257.0,
+        "coefficient_variation": 4.715685170579691,
+        "skewness": 7.990574293181984,
+        "kurtosis": 76.504864240674,
+        "zeros_count": 63,
+        "zeros_percentage": 1.037037037037037,
+        "negative_count": 0,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "normalidad_shapiro_p": 1.1729352194069615e-90,
+        "es_normal": false,
+        "casos_extremos_altos": 304,
+        "casos_extremos_bajos": 63,
+        "concentracion_top10": 9.976072597273165
+      }
+    },
+    "variables_categoricas": {
+      "distrito_fiscal": {
+        "unique_values": 34,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "LIMA CENTRO",
+        "mode_frequency": 411,
+        "mode_percentage": 6.765432098765432,
+        "entropy": 3.497379596102572,
+        "gini_concentration": 0.1111546840958606,
+        "top_3_values": {
+          "LIMA CENTRO": 411,
+          "CALLAO": 235,
+          "LIMA NORTE": 231
+        },
+        "top_3_percentage": 14.436213991769547,
+        "interpretacion_concentracion": "Baja concentración - distribución relativamente balanceada"
+      },
+      "tipo_fiscalia": {
+        "unique_values": 3,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "PROVINCIAL",
+        "mode_frequency": 3184,
+        "mode_percentage": 52.41152263374486,
+        "entropy": 0.7132575528904505,
+        "gini_concentration": 0.3469958847736627,
+        "top_3_values": {
+          "PROVINCIAL": 3184,
+          "SUPERIOR": 2869,
+          "SUPREMA": 22
+        },
+        "top_3_percentage": 100.0,
+        "interpretacion_concentracion": "Muy alta concentración - dominada por pocas categorías"
+      },
+      "materia": {
+        "unique_values": 5,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "PENAL",
+        "mode_frequency": 3493,
+        "mode_percentage": 57.497942386831284,
+        "entropy": 0.8451499950262574,
+        "gini_concentration": 0.6087242798353909,
+        "top_3_values": {
+          "PENAL": 3493,
+          "FAMILIA": 2269,
+          "CIVIL": 306
+        },
+        "top_3_percentage": 99.88477366255144,
+        "interpretacion_concentracion": "Muy alta concentración - dominada por pocas categorías"
+      },
+      "especialidad": {
+        "unique_values": 10,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "PENAL",
+        "mode_frequency": 3493,
+        "mode_percentage": 57.497942386831284,
+        "entropy": 1.4203416767564137,
+        "gini_concentration": 0.6522962962962962,
+        "top_3_values": {
+          "PENAL": 3493,
+          "FAMILIA PENAL": 594,
+          "VIOLENCIA FAMILIAR": 589
+        },
+        "top_3_percentage": 76.97119341563786,
+        "interpretacion_concentracion": "Alta concentración - algunas categorías dominantes"
+      },
+      "tipo_caso": {
+        "unique_values": 15,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "EXPEDIENTE",
+        "mode_frequency": 2076,
+        "mode_percentage": 34.17283950617284,
+        "entropy": 1.83243027035329,
+        "gini_concentration": 0.662167352537723,
+        "top_3_values": {
+          "EXPEDIENTE": 2076,
+          "DENUNCIA": 1876,
+          "INVESTIGACION PREVENTIVA": 401
+        },
+        "top_3_percentage": 71.65432098765432,
+        "interpretacion_concentracion": "Alta concentración - algunas categorías dominantes"
+      },
+      "especializada": {
+        "unique_values": 14,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "NO_TIPO_ESPECIALIZADA",
+        "mode_frequency": 4458,
+        "mode_percentage": 73.38271604938271,
+        "entropy": 1.1112971099212758,
+        "gini_concentration": 0.801822457378013,
+        "top_3_values": {
+          "NO_TIPO_ESPECIALIZADA": 4458,
+          "DELITOS DE CORRUPCION DE FUNCIONARIOS": 568,
+          "MATERIA AMBIENTAL": 302
+        },
+        "top_3_percentage": 87.70370370370371,
+        "interpretacion_concentracion": "Muy alta concentración - dominada por pocas categorías"
+      },
+      "dpto_pjfs": {
+        "unique_values": 25,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "LIMA",
+        "mode_frequency": 1223,
+        "mode_percentage": 20.131687242798353,
+        "entropy": 2.99744832106462,
+        "gini_concentration": 0.2852609053497943,
+        "top_3_values": {
+          "LIMA": 1223,
+          "CALLAO": 397,
+          "ANCASH": 369
+        },
+        "top_3_percentage": 32.74074074074074,
+        "interpretacion_concentracion": "Baja concentración - distribución relativamente balanceada"
+      },
+      "prov_pjfs": {
+        "unique_values": 30,
+        "missing_count": 0,
+        "missing_percentage": 0.0,
+        "mode": "LIMA",
+        "mode_frequency": 969,
+        "mode_percentage": 15.950617283950615,
+        "entropy": 3.2449207314701325,
+        "gini_concentration": 0.2129108367626884,
+        "top_3_values": {
+          "LIMA": 969,
+          "CALLAO": 397,
+          "MAYNAS": 199
+        },
+        "top_3_percentage": 25.761316872427987,
+        "interpretacion_concentracion": "Baja concentración - distribución relativamente balanceada"
+      }
+    },
+    "metricas_negocio": {
+      "eficiencia": {
+        "tasa_atencion_promedio": 0.9243260076759288,
+        "tasa_atencion_mediana": 0.9848484848484849,
+        "casos_eficiencia_perfecta": 2565,
+        "casos_eficiencia_perfecta_pct": 42.22222222222222,
+        "casos_baja_eficiencia": 159,
+        "casos_baja_eficiencia_pct": 2.617283950617284
+      },
+      "volumen": {
+        "distribucion_volumen": {
+          "Medio": 1415,
+          "Bajo": 1392,
+          "Muy Bajo": 1362,
+          "Alto": 1339,
+          "Muy Alto": 567
+        },
+        "casos_alto_volumen": 567,
+        "casos_bajo_volumen": 1362,
+        "concentracion_casos_top_10_distritos": 59.46635105569891
+      },
+      "temporal": {
+        "tendencia_ingresados": {
+          "pendiente": 74769.6,
+          "r_squared": 0.22076786665288647,
+          "p_value": 0.42456206337591756,
+          "es_significativa": false,
+          "direccion": "Creciente"
+        },
+        "tendencia_atendidos": {
+          "pendiente": 89765.8,
+          "r_squared": 0.2839222044305549,
+          "p_value": 0.3551953179341912,
+          "es_significativa": false,
+          "direccion": "Creciente"
+        },
+        "variabilidad_anual_ingresados": 251609.55587040013,
+        "crecimiento_total_periodo": 7.366341694651954
+      }
+    },
+    "correlaciones": {
+      "matriz_pearson": {
+        "ingresado": {
+          "ingresado": 1.0,
+          "atendido": 0.9891141595993812,
+          "tasa_atencion": -0.05983234096171362,
+          "casos_pendientes": 0.7480555634190156
+        },
+        "atendido": {
+          "ingresado": 0.9891141595993812,
+          "atendido": 1.0,
+          "tasa_atencion": -0.03772219710384398,
+          "casos_pendientes": 0.6422581697027097
+        },
+        "tasa_atencion": {
+          "ingresado": -0.05983234096171362,
+          "atendido": -0.03772219710384398,
+          "tasa_atencion": 1.0,
+          "casos_pendientes": -0.1415355437338222
+        },
+        "casos_pendientes": {
+          "ingresado": 0.7480555634190156,
+          "atendido": 0.6422581697027097,
+          "tasa_atencion": -0.1415355437338222,
+          "casos_pendientes": 1.0
+        }
+      },
+      "matriz_spearman": {
+        "ingresado": {
+          "ingresado": 1.0,
+          "atendido": 0.996357467619989,
+          "tasa_atencion": -0.3223158501803753,
+          "casos_pendientes": 0.6701168230233407
+        },
+        "atendido": {
+          "ingresado": 0.996357467619989,
+          "atendido": 1.0,
+          "tasa_atencion": -0.2723382101066529,
+          "casos_pendientes": 0.6346990521203728
+        },
+        "tasa_atencion": {
+          "ingresado": -0.3223158501803753,
+          "atendido": -0.2723382101066529,
+          "tasa_atencion": 1.0,
+          "casos_pendientes": -0.8514414486730659
+        },
+        "casos_pendientes": {
+          "ingresado": 0.6701168230233407,
+          "atendido": 0.6346990521203728,
+          "tasa_atencion": -0.8514414486730659,
+          "casos_pendientes": 1.0
+        }
+      },
+      "correlaciones_fuertes_pearson": [
+        {
+          "variable1": "ingresado",
+          "variable2": "atendido",
+          "correlacion": 0.9891141595993812,
+          "fuerza": "Muy fuerte",
+          "direccion": "Positiva"
+        },
+        {
+          "variable1": "ingresado",
+          "variable2": "casos_pendientes",
+          "correlacion": 0.7480555634190156,
+          "fuerza": "Fuerte",
+          "direccion": "Positiva"
+        },
+        {
+          "variable1": "atendido",
+          "variable2": "casos_pendientes",
+          "correlacion": 0.6422581697027097,
+          "fuerza": "Moderada",
+          "direccion": "Positiva"
+        }
+      ],
+      "correlaciones_fuertes_spearman": [
+        {
+          "variable1": "ingresado",
+          "variable2": "atendido",
+          "correlacion": 0.996357467619989,
+          "fuerza": "Muy fuerte",
+          "direccion": "Positiva"
+        },
+        {
+          "variable1": "tasa_atencion",
+          "variable2": "casos_pendientes",
+          "correlacion": -0.8514414486730659,
+          "fuerza": "Fuerte",
+          "direccion": "Negativa"
+        },
+        {
+          "variable1": "ingresado",
+          "variable2": "casos_pendientes",
+          "correlacion": 0.6701168230233407,
+          "fuerza": "Moderada",
+          "direccion": "Positiva"
+        },
+        {
+          "variable1": "atendido",
+          "variable2": "casos_pendientes",
+          "correlacion": 0.6346990521203728,
+          "fuerza": "Moderada",
+          "direccion": "Positiva"
+        }
+      ]
+    }
+  },
+  "patrones_sesgos": {
+    "sesgos_geograficos": {
+      "concentracion_departamental": {
+        "top_3_departamentos": {
+          "LIMA": 2190599,
+          "LAMBAYEQUE": 400874,
+          "AREQUIPA": 391054
+        },
+        "concentracion_top_3": 46.08882847817225,
+        "coeficiente_gini": 0.5214745077386806,
+        "departamentos_bajo_volumen": 0
+      },
+      "disparidad_eficiencia": {
+        "departamento_mas_eficiente": "HUANCAVELICA",
+        "tasa_mas_alta": 0.9807071359380045,
+        "departamento_menos_eficiente": "AMAZONAS",
+        "tasa_mas_baja": 0.9058941686020966,
+        "brecha_eficiencia": 0.07481296733590792
+      }
+    },
+    "sesgos_temporales": {
+      "años_atipicos": [],
+      "coeficiente_variacion_temporal": 0.1738815144488895,
+      "tendencia_general": {
+        "pendiente": 74769.6,
+        "r_squared": 0.22076786665288647,
+        "p_value": 0.42456206337591756,
+        "es_significativa": false,
+        "direccion": "Creciente"
+      }
+    },
+    "sesgos_materia": {
+      "dominancia_materia": {
+        "materia_dominante": "PENAL",
+        "participacion": 91.3293674892888,
+        "es_dominante": true
+      },
+      "disparidad_eficiencia_materia": {
+        "materia_mas_eficiente": "FAMILIA",
+        "eficiencia_maxima": 0.93,
+        "materia_menos_eficiente": "CONTROL INTERNO",
+        "eficiencia_minima": 0.837,
+        "brecha_eficiencia": 0.09300000000000008
+      }
+    },
+    "patrones_eficiencia": {
+      "por_tipo_fiscalia": {
+        "PROVINCIAL": {
+          "ing_total": 5897633,
+          "at_total": 5159230,
+          "ef_promedio": 0.898,
+          "ef_std": 0.171,
+          "registros": 3184,
+          "ef_calculada": 0.875
+        },
+        "SUPERIOR": {
+          "ing_total": 498529,
+          "at_total": 476143,
+          "ef_promedio": 0.955,
+          "ef_std": 0.119,
+          "registros": 2869,
+          "ef_calculada": 0.955
+        },
+        "SUPREMA": {
+          "ing_total": 75096,
+          "at_total": 64786,
+          "ef_promedio": 0.855,
+          "ef_std": 0.203,
+          "registros": 22,
+          "ef_calculada": 0.863
+        }
+      },
+      "efecto_especializacion": {
+        "eficiencia_con_especializacion": 0.9236668043132449,
+        "eficiencia_sin_especializacion": 0.9245651130679116,
+        "diferencia": -0.0008983087546666768,
+        "especializacion_mejora_eficiencia": false
+      },
+      "anomalias_identificadas": {
+        "total_anomalias": 63,
+        "porcentaje_dataset": 1.037037037037037,
+        "tipos_anomalia": {
+          "sobre_atencion_extrema": 0,
+          "sin_atencion_con_casos": 63
+        }
+      }
+    },
+    "agrupaciones": {
+      "numero_clusters_optimo": 2,
+      "silhouette_score": 0.8893363973863861,
+      "caracteristicas_clusters": {
+        "ingresado_mean": {
+          "0": 415.38,
+          "1": 31500.614
+        },
+        "ingresado_std": {
+          "0": 1449.683,
+          "1": 14360.04
+        },
+        "ingresado_count": {
+          "0": 5948,
+          "1": 127
+        },
+        "atendido_mean": {
+          "0": 376.367,
+          "1": 27256.126
+        },
+        "atendido_std": {
+          "0": 1278.564,
+          "1": 12393.624
+        },
+        "atendido_count": {
+          "0": 5948,
+          "1": 127
+        },
+        "tasa_atencion_mean": {
+          "0": 0.925,
+          "1": 0.875
+        },
+        "tasa_atencion_std": {
+          "0": 0.152,
+          "1": 0.119
+        },
+        "tasa_atencion_count": {
+          "0": 5948,
+          "1": 127
+        }
+      },
+      "interpretacion_clusters": {
+        "Cluster_0": {
+          "tamaño": 5948,
+          "porcentaje": 97.90946502057614,
+          "caracteristica_volumen": "Alto volumen",
+          "caracteristica_eficiencia": "Alta eficiencia",
+          "casos_promedio_ingresado": 415.3799596503026,
+          "eficiencia_promedio": 0.9253811015765279
+        },
+        "Cluster_1": {
+          "tamaño": 127,
+          "porcentaje": 2.090534979423868,
+          "caracteristica_volumen": "Alto volumen",
+          "caracteristica_eficiencia": "Eficiencia media",
+          "casos_promedio_ingresado": 31500.614173228347,
+          "eficiencia_promedio": 0.8749110586935338
+        }
+      }
+    }
+  },
+  "outliers": {
+    "anio": {
+      "total_valores": 6075,
+      "metodos": {
+        "IQR": {
+          "count": 0,
+          "percentage": 0.0,
+          "valores_extremos": [],
+          "interpretacion": "0.0% de valores atípicos detectados"
+        },
+        "Z_Score_Modificado": {
+          "count": 0,
+          "percentage": 0.0,
+          "valores_extremos": [],
+          "interpretacion": "Pocos valores extremos - dentro del rango esperado"
+        }
+      }
+    },
+    "ingresado": {
+      "total_valores": 6075,
+      "metodos": {
+        "IQR": {
+          "count": 746,
+          "percentage": 12.279835390946502,
+          "valores_extremos": [
+            77627,
+            74918,
+            69946,
+            68453,
+            67203
+          ],
+          "interpretacion": "Alta presencia de casos extremos (12.3%) sugiere gran heterogeneidad en carga de trabajo"
+        },
+        "Z_Score_Modificado": {
+          "count": 1251,
+          "percentage": 20.59259259259259,
+          "valores_extremos": [
+            77627,
+            74918,
+            69946,
+            68453,
+            67203
+          ],
+          "interpretacion": "Muchos valores extremos - posible problema de calidad de datos o gran variabilidad natural"
+        }
+      }
+    },
+    "atendido": {
+      "total_valores": 6075,
+      "metodos": {
+        "IQR": {
+          "count": 756,
+          "percentage": 12.444444444444445,
+          "valores_extremos": [
+            71356,
+            64179,
+            60570,
+            59822,
+            57341
+          ],
+          "interpretacion": "Alta presencia de casos extremos (12.4%) sugiere gran heterogeneidad en carga de trabajo"
+        },
+        "Z_Score_Modificado": {
+          "count": 1229,
+          "percentage": 20.23045267489712,
+          "valores_extremos": [
+            71356,
+            64179,
+            60570,
+            59822,
+            57341
+          ],
+          "interpretacion": "Muchos valores extremos - posible problema de calidad de datos o gran variabilidad natural"
+        }
+      }
+    },
+    "multivariado": {
+      "total_outliers": 259,
+      "porcentaje": 4.2633744855967075,
+      "caracteristicas_outliers": {
+        "ingresado_promedio": 19625.737451737452,
+        "atendido_promedio": 16980.6833976834,
+        "tasa_atencion_promedio": 0.8019215634078478,
+        "casos_extremos": [
+          {
+            "distrito_fiscal": "LAMBAYEQUE",
+            "materia": "PENAL",
+            "ingresado": 77627,
+            "atendido": 71356
+          },
+          {
+            "distrito_fiscal": "LIMA CENTRO",
+            "materia": "PENAL",
+            "ingresado": 74918,
+            "atendido": 60570
+          },
+          {
+            "distrito_fiscal": "LIMA ESTE",
+            "materia": "PENAL",
+            "ingresado": 69946,
+            "atendido": 29065
+          }
+        ]
+      },
+      "interpretacion": "Casos con combinaciones atípicas de volumen y eficiencia que requieren revisión individual"
+    },
+    "contextuales": {
+      "sobre_atencion_extrema": {
+        "count": 0,
+        "casos": [],
+        "interpretacion": "Posibles errores de registro o casos trasladados de períodos anteriores"
+      },
+      "volumen_extremo": {
+        "count": 61,
+        "umbral": 27744.040000000034,
+        "casos": [
+          {
+            "distrito_fiscal": "LAMBAYEQUE",
+            "materia": "PENAL",
+            "ingresado": 77627,
+            "atendido": 71356
+          },
+          {
+            "distrito_fiscal": "LIMA CENTRO",
+            "materia": "PENAL",
+            "ingresado": 74918,
+            "atendido": 60570
+          },
+          {
+            "distrito_fiscal": "LIMA ESTE",
+            "materia": "PENAL",
+            "ingresado": 69946,
+            "atendido": 29065
+          },
+          {
+            "distrito_fiscal": "LAMBAYEQUE",
+            "materia": "PENAL",
+            "ingresado": 68453,
+            "atendido": 64179
+          },
+          {
+            "distrito_fiscal": "LAMBAYEQUE",
+            "materia": "PENAL",
+            "ingresado": 67203,
+            "atendido": 59822
+          }
+        ],
+        "interpretacion": "Distritos o materias con carga de trabajo excepcional que pueden requerir recursos adicionales"
+      },
+      "sin_atencion_alto_volumen": {
+        "count": 1,
+        "casos": [
+          {
+            "distrito_fiscal": "LIMA ESTE",
+            "materia": "PENAL",
+            "ingresado": 105,
+            "especializada": "NO_TIPO_ESPECIALIZADA"
+          }
+        ],
+        "interpretacion": "Posibles problemas operativos o administrativos que impiden el procesamiento de casos"
+      }
+    }
+  }
+}
