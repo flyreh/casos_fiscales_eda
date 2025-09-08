@@ -85,7 +85,7 @@ class LimpiadorDatosFiscales:
         Returns:
             Diccionario con métricas de calidad
         """
-        self.logger.info(f"=== ANÁLISIS INICIAL DATASET {año} ===")
+        self.logger.info(f"=== ANÁLISIS DATASET {año} ===")
         
         calidad = {
             'año': año,
@@ -103,7 +103,7 @@ class LimpiadorDatosFiscales:
         calidad['analisis_fechas'] = self._analizar_fechas(df)
         
         # Mostrar resumen
-        print(f"\nRESUMEN CALIDAD INICIAL - {año}")
+        print(f"\nRESUMEN CALIDAD - {año}")
         print(f"   Filas: {calidad['filas_originales']:,}")
         print(f"   Columnas: {calidad['columnas']}")
         print(f"   Duplicados: {calidad['duplicados']}")
@@ -260,8 +260,8 @@ class LimpiadorDatosFiscales:
                 
                 df[col] = pd.to_numeric(df[col], errors='coerce').fillna(0)
                 
-                print(f"{col}: {valores_convertidos} valores nulos/vacíos convertidos a 0")
-                self.logger.info(f"    {col}: nulos={nulos_originales}, vacíos={valores_vacios}, total convertidos={valores_convertidos}")
+                print(f"variable > {col}: {valores_convertidos} valores nulos/vacíos convertidos a 0")
+                self.logger.info(f"columna >{col}: nulos={nulos_originales}, vacíos={valores_vacios}, total convertidos={valores_convertidos}")
         
         columnas_criticas = ['periodo', 'anio', 'fecha_descarga', 'distrito_fiscal',
                         'tipo_fiscalia', 'materia', 'especialidad', 'tipo_caso',
@@ -288,8 +288,7 @@ class LimpiadorDatosFiscales:
                 col: nulos_antes.get(col, 0) for col in columnas_numericas_cero
             }
         }
-        print(f" Filas eliminadas por nulos: {resultado['filas_eliminadas']:,}")
-        print(f"  Valores convertidos a 0 en columnas numéricas")
+        print(f" Filas eliminadas por nulos solo en campos clave: {resultado['filas_eliminadas']:,}")
         
         return df, resultado
     
@@ -360,7 +359,7 @@ class LimpiadorDatosFiscales:
     
     def _normalizar_categoricas(self, df: pd.DataFrame, año: int) -> Tuple[pd.DataFrame, Dict]:
         """Normalizar texto en variables categóricas"""
-        self.logger.info(f"Normalizando categóricas - {año}")
+        self.logger.info(f"Normalizando variables categóricas - {año}")
         
         columnas_texto = ['distrito_fiscal', 'tipo_fiscalia', 'materia', 
                          'especialidad', 'tipo_caso', 'especializada',
@@ -466,7 +465,11 @@ class LimpiadorDatosFiscales:
         columnas_numericas = ['ingresado', 'atendido']
         outliers_info = {}
         
-        for col in columnas_numericas:
+        # Crear figura con subplots
+        fig, axes = plt.subplots(2, 2, figsize=(15, 12))
+        fig.suptitle(f'Análisis de Outliers - {año}', fontsize=16, fontweight='bold')
+        
+        for i, col in enumerate(columnas_numericas):
             # Método IQR
             Q1 = df[col].quantile(0.25)
             Q3 = df[col].quantile(0.75)
@@ -475,7 +478,7 @@ class LimpiadorDatosFiscales:
             limite_inferior = Q1 - 1.5 * IQR
             limite_superior = Q3 + 1.5 * IQR
             
-            outliers = df[(df[col] < limite_inferior) | (df[col] > limite_superior)]
+            outliers_iqr = df[(df[col] < limite_inferior) | (df[col] > limite_superior)]
             
             # Método Z-score
             from scipy import stats
@@ -484,8 +487,8 @@ class LimpiadorDatosFiscales:
             
             outliers_info[col] = {
                 'metodo_iqr': {
-                    'count': len(outliers),
-                    'percentage': (len(outliers) / len(df)) * 100,
+                    'count': len(outliers_iqr),
+                    'percentage': (len(outliers_iqr) / len(df)) * 100,
                     'limite_inferior': limite_inferior,
                     'limite_superior': limite_superior
                 },
@@ -495,15 +498,88 @@ class LimpiadorDatosFiscales:
                 }
             }
             
-            # NO eliminamos outliers, solo los identificamos
-            self.logger.info(f"{col}: {len(outliers)} outliers IQR, {len(outliers_zscore)} outliers Z-score")
+            # Box Plot para método IQR
+            box_data = df[col].values
+            bp = axes[0, i].boxplot(box_data, patch_artist=True, 
+                                boxprops=dict(facecolor='lightblue', alpha=0.7),
+                                flierprops=dict(marker='o', markerfacecolor='red', 
+                                                markersize=4, alpha=0.6))
+            
+            axes[0, i].set_title(f'Box Plot IQR - {col.title()}')
+            axes[0, i].set_ylabel('Valores')
+            axes[0, i].grid(True, alpha=0.3)
+            
+            # Agregar líneas de límites IQR
+            axes[0, i].axhline(y=limite_inferior, color='red', linestyle='--', 
+                            alpha=0.7, label=f'Límite Inf: {limite_inferior:.0f}')
+            axes[0, i].axhline(y=limite_superior, color='red', linestyle='--', 
+                            alpha=0.7, label=f'Límite Sup: {limite_superior:.0f}')
+            axes[0, i].legend(fontsize=8)
+            
+            # Añadir texto con estadísticas
+            stats_text = f'Outliers IQR: {len(outliers_iqr)} ({(len(outliers_iqr)/len(df)*100):.1f}%)'
+            axes[0, i].text(0.02, 0.98, stats_text, transform=axes[0, i].transAxes,
+                        bbox=dict(boxstyle='round', facecolor='wheat', alpha=0.8),
+                        verticalalignment='top', fontsize=9)
+            
+            # Scatter Plot para método Z-Score
+            x_values = range(len(df))
+            
+            mask_outliers_z = z_scores > 3
+            
+            axes[1, i].scatter(np.array(x_values)[~mask_outliers_z], 
+                            df[col].values[~mask_outliers_z],
+                            alpha=0.6, s=20, c='blue', label='Normal')
+            
+            # Plotear outliers
+            if mask_outliers_z.any():
+                axes[1, i].scatter(np.array(x_values)[mask_outliers_z], 
+                                df[col].values[mask_outliers_z],
+                                alpha=0.8, s=40, c='red', label='Outlier Z-Score')
+            
+            axes[1, i].set_title(f'Z-Score Outliers - {col.title()}')
+            axes[1, i].set_xlabel('Índice de Registro')
+            axes[1, i].set_ylabel('Valores')
+            axes[1, i].grid(True, alpha=0.3)
+            axes[1, i].legend()
+            
+            # Añadir líneas de referencia (media ± 3σ)
+            media = df[col].mean()
+            std = df[col].std()
+            axes[1, i].axhline(y=media + 3*std, color='red', linestyle=':', 
+                            alpha=0.7, label=f'μ + 3σ')
+            axes[1, i].axhline(y=media - 3*std, color='red', linestyle=':', 
+                            alpha=0.7, label=f'μ - 3σ')
+            
+            # Añadir texto con estadísticas
+            stats_text_z = f'Outliers Z-Score: {len(outliers_zscore)} ({(len(outliers_zscore)/len(df)*100):.1f}%)'
+            axes[1, i].text(0.02, 0.98, stats_text_z, transform=axes[1, i].transAxes,
+                        bbox=dict(boxstyle='round', facecolor='lightcoral', alpha=0.8),
+                        verticalalignment='top', fontsize=9)
+            
+            self.logger.info(f"variable> {col}:")
+            self.logger.info(f"{len(outliers_iqr)} outliers IQR")
+            self.logger.info(f"  Límites IQR: [{limite_inferior:.2f}, {limite_superior:.2f}]")
+            self.logger.info(f"  Porcentaje de outliers IQR: {outliers_info[col]['metodo_iqr']['percentage']:.2f}%")
+            self.logger.info(f"{len(outliers_zscore)} outliers z-score")
+            self.logger.info(f"  Porcentaje de outliers z-score: {outliers_info[col]['metodo_zscore']['percentage']:.2f}%")
+        
+        plt.tight_layout()
+        
+        os.makedirs('resultados_limpieza/graficos', exist_ok=True)
+        
+        plt.savefig(f'resultados_limpieza/graficos/outliers_analisis_{año}.png', 
+                    dpi=300, bbox_inches='tight')
+        plt.show()
         
         resultado = {
             'outliers_por_columna': outliers_info,
-            'accion_tomada': 'Identificados pero no eliminados'
+            'accion_tomada': 'Identificados pero no eliminados',
+            'grafica_guardada': f'resultados_limpieza/graficos/outliers_analisis_{año}.png'
         }
         
         print(f"Identificación outliers completada")
+        print(f"Gráfica guardada: resultados_limpieza/graficos/outliers_analisis_{año}.png")
         
         return df, resultado
     
@@ -512,7 +588,7 @@ class LimpiadorDatosFiscales:
         return {
             'filas_eliminadas': calidad_inicial['filas_originales'] - calidad_final['filas_originales'],
             'porcentaje_retencion': (calidad_final['filas_originales'] / calidad_inicial['filas_originales']) * 100,
-            'nulos_eliminados': sum(calidad_inicial['nulos_por_columna'].values()) - sum(calidad_final['nulos_por_columna'].values()),
+            'nulos_detectados': sum(calidad_inicial['nulos_por_columna'].values()) - sum(calidad_final['nulos_por_columna'].values()),
             'duplicados_eliminados': calidad_inicial['duplicados'] - calidad_final['duplicados'],
             'mejora_calidad': {
                 'antes': calidad_inicial['filas_originales'] - sum(calidad_inicial['nulos_por_columna'].values()),
@@ -535,9 +611,8 @@ class LimpiadorDatosFiscales:
         print(f"Filas finales: {final['filas_originales']:,}")
         print(f"Filas eliminadas: {metricas['filas_eliminadas']:,}")
         print(f"Retención: {metricas['porcentaje_retencion']:.1f}%")
-        
-        print(f"\nDuplicados eliminados: {metricas['duplicados_eliminados']:,}")
-        print(f"Nulos eliminados: {metricas['nulos_eliminados']:,}")
+        print(f"Duplicados eliminados: {metricas['duplicados_eliminados']:,}")
+        print(f"Nulos detectados: {metricas['nulos_detectados']:,}")
         
         # Guardar reporte en archivo
         with open(f"{self.ruta_logs}reporte_limpieza_{año}.json", 'w') as f:
@@ -559,7 +634,7 @@ class LimpiadorDatosFiscales:
         resultados_completos = {}
         
         for año, ruta in rutas_archivos.items():
-            self.logger.info(f"\nPROCESANDO AÑO {año}")
+            print(f"\n\nPROCESANDO AÑO {año}")
             
             try:
                 # Cargar dataset
